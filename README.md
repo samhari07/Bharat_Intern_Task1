@@ -21,4 +21,4 @@ The layout was created with inspiration from the Neumorphism, which gives it a m
 You can check it out the [**project**](https://github.com/samhari07/Bharat_Intern_Task1) here.
 
 ---
-Created with 💜 by [**Annd**](https://github.com/samhari07) 
+Created with 💜 by [**HARIGANESH M**](https://github.com/samhari07) 
