@@ -1,0 +1,155 @@
+/* ------ colors and reset ------ */
+:root {
+  --white: #fff;
+  --soft-gray: #eef2f7;
+  --gray: #bebebe;
+  --gray-light: #ced2df;
+  --gray-light-2:#bec8e4;
+  --dark-grey: #9baacf;
+  --grey-grey: #8292b9;
+  --text: #6e7a97;
+  --purple: #6d5dfc;
+  --dark-purple:#4b1ba3 ;
+  --blue: #8abdff;
+}
+
+*, html {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+/* ------- body and textual elements -------- */
+body {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: var(--soft-gray);
+  font-family: 'Switzer', sans-serif;
+  color: var(--text);
+  color: var(--grey-grey);
+}
+
+.container {
+  width: 65rem; 
+  height: 50rem; 
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border-radius: 3rem;
+  background: var(--soft-gray);
+  box-shadow: 15px 15px 30px var(--gray),
+             -15px -15px 30px var(--white);
+}
+
+h1 {
+  font-family: 'Outfit', sans-serif;
+  font-size: 4rem;
+  color: var(--purple);
+}
+
+p {
+  font-size: 1.7rem;
+  margin-top: 1.5rem;
+}
+
+
+/* ---------- inputs --------- */
+input {
+  width: 20rem;
+  height: 4rem;
+  padding: 1.4rem;
+  margin-top: 2rem;
+  border: none;
+  border-radius: 1rem;
+  background: none;
+  color: var(--dark-grey);
+  color: var(--text);
+  font-family: inherit;
+  font-size: 1.4rem;
+  box-shadow: inset .2rem .2rem .5rem var(--gray-light),
+              inset -.2rem -.2rem .5rem var(--white);
+}
+
+input:focus {
+  outline: none;
+  box-shadow: .3rem .3rem .6rem var(--gray-light), 
+              -.2rem -.2rem .5rem var(--white);
+}
+
+input::placeholder {
+  color: inherit;
+}
+
+input:first-of-type {
+  margin-top: 4rem;
+}
+
+
+/* -------- buttons -------- */
+.buttons {
+  display: flex;
+  justify-content: center;
+  gap: 3rem;
+}
+
+button {
+  width: 16rem;
+  height: 5rem;
+  margin-top: 3rem;
+  font-size: 1.5rem;
+  border: none;
+  border-radius: 1.5rem;
+  box-shadow: .3rem .3rem .6rem var(--gray-light), 
+              -.2rem -.2rem .5rem var(--white);
+  cursor: pointer;
+  transition: .3s ease;
+}
+
+/* ---- convert button ----- */
+#btnConvert {
+  background: var(--purple);
+  color: var(--soft-gray);
+  box-shadow:inset .2rem .2rem 1rem var(--blue), 
+             inset -.2rem -.2rem 1rem var(--dark-purple),
+             .3rem .3rem .6rem var(--gray-light), 
+             -.2rem -.2rem .5rem var(--white);
+}
+
+#btnConvert:hover { 
+  color: var(--white); 
+}
+
+#btnConvert:active {
+  box-shadow:inset .2rem .2rem 1rem var(--dark-purple),
+             inset -.2rem -.2rem 1rem var(--blue);
+}
+
+/* ----- clean button ------ */
+#btnClear {
+  color: var(--grey-grey);
+}
+
+#btnClear:hover { 
+  color: var(--purple);
+ }
+
+#btnClear:active {
+  box-shadow: inset .2rem .2rem .5rem var(--gray-light), 
+              inset -.2rem -.2rem .5rem var(--white);
+}
+
+
+/* ------ enter a number message ------ */
+span {
+  font-size: 1.6rem;
+  color: var(--purple);
+  margin-top: 2.5rem;
+}
